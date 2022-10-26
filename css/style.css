@@ -1,0 +1,1317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family:OpenSans-Regular;
+    src: url('../font/Open_Sans/static/OpenSans/OpenSans-Regular.ttf');
+}
+@font-face{
+    font-family:OpenSans-Light;
+    src: url('../font/Open_Sans/static/OpenSans/OpenSans-Light.ttf');
+}
+@font-face{
+    font-family:OpenSans-Bold;
+    src: url('../font/Open_Sans/static/OpenSans/OpenSans-Bold.ttf');
+}
+@font-face{
+    font-family:OpenSans-Semibold;
+    src: url('../font/Open_Sans/static/OpenSans/OpenSans-Semibold.ttf');
+}
+@font-face{
+    font-family:Roboto-Black;
+    src:url('../font/Roboto/Roboto-Black.ttf');
+}
+@font-face{
+    font-family:Roboto-Light;
+    src:url('../font/Roboto/Roboto-Light.ttf');
+}
+@font-face{
+    font-family:Roboto-Bold;
+    src:url('../font/Roboto/Roboto-Bold.ttf');
+}
+@font-face{
+    font-family:Roboto-Medium;
+    src:url('../font/Roboto/Roboto-Medium.ttf');
+}
+@font-face{
+    font-family:Roboto-Regular;
+    src:url('../font/Roboto/Roboto-Regular.ttf');
+}
+:root{
+    --first-color:#32a8d6;
+    --second-color:#fefefe;
+    --third-color:#f1c40f;
+    --fourth-color:#ffffff;
+    --fifth-color:#fdfdfd;
+    --sixth-color:#fffdfd;
+    --seventh-color:#555252;
+    --eighth-color:#000000;
+    --nineth-color:#444444;
+    --tenth-color:#fffcf4;
+    --eleventh-color:#cccccc;
+    scroll-behavior: smooth; 
+}
+
+body{
+    max-width: 1600px;
+    margin: auto;
+}
+
+/*HEADER*/
+header .header1{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #24282e;
+}
+/*header1*/
+
+/*contact*/
+header .header1 .contact{
+    font-family: OpenSans-Light;
+    font-size: 14px;
+}
+header .header1 .contact a{
+    color: var(--second-color);
+    text-decoration: none;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+header .header1 .contact a span{
+    margin-left: 5px;
+}
+header .header1 .contact a:hover{
+    color: var(--third-color);
+}
+/*tool*/
+header .header1 .tool{
+    margin-left: auto;
+    font-family: OpenSans-Light;
+    font-size: 14px;
+}
+header .header1 .tool a{
+    margin-left: 17px;
+    margin-right: 17px;
+    text-decoration: none;
+    color: var(--second-color);
+}
+header .header1 .tool a span{
+    margin-left: 10px;
+}
+header .header1 .tool a:hover{
+    color: var(--third-color);
+}
+
+/*header2*/
+
+header .header2{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+}
+header .header2 .container{
+    display: flex;
+}
+header .header2 .container ul{
+    margin-left: auto;
+    list-style: none;
+    display: flex;
+    font-family: OpenSans-Bold;
+    font-size: 14px;
+}
+header .header2 .container ul li{
+    margin-left: 14px;
+    margin-right: 14px;
+}
+header .header2 .container ul li a{
+    text-decoration: none;
+    color: #0f0101;
+}
+header .header2 .container button{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: -15px;
+    display: none;
+    font-size: 25px;
+    color:var(--seventh-color);
+}
+header .header2 .container1{
+    display: none;
+}
+header .header2 .container a.active,
+header .header2 .container a:hover{
+    color: var(--first-color);
+    text-decoration: line-through;
+}
+header .header2 .container1 ul{
+    list-style: none;
+    text-align: center;
+    background-color:rgba(83, 92, 104,0.8);
+}
+header .header2 .container1 ul li a{
+    text-decoration: none;
+    font-family: OpenSans-Bold;
+    font-size: 20px;
+    color:var(--second-color);
+}
+header .header2 .container1 ul li{
+    margin-bottom: 5px;
+}
+header .header2 .container1 ul li.active,
+header .header2 .container1 ul li:hover{
+    background-color: var(--first-color);
+    cursor: pointer;
+}
+
+/* fixed-top header*/
+header .sticky {
+    position: fixed;
+    top: 0;
+    width: 1600px;
+    background-color:rgba(241, 196, 15,0.8);
+    z-index: 1;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 101px;
+  }
+
+
+
+
+
+/*MAIN*/
+/*home*/
+main .home{
+    padding-top: 164px;
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+main .home h1{
+    font-family: Roboto-black;
+    font-size: 60px;
+    color: var(--first-color);
+}
+main .home h1 strong{
+    color: var(--fourth-color);
+}
+main .home p{
+    font-family: Roboto-light;
+    font-size: 24px;
+    color: var(--fourth-color);
+    margin-bottom: 19px;
+}
+main .home > button{
+    margin-bottom: 280px;
+    font-family: Roboto-Bold;
+    line-height: 42px;
+    padding-right: 38px;
+    padding-left: 38px;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--fifth-color);
+    border: 2px solid var(--first-color);
+    cursor: pointer;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+main .home > button:hover{
+    background-color: var(--first-color);
+    color:var(--fifth-color);
+}
+
+/*tag*/
+main .home .tag{
+    max-width: 1110px;
+    margin: auto;
+}
+main .home .tag .atag{
+    text-align: left;
+}
+main .home .tag .atag a{
+    display: inline-block;
+    width: 150px;
+    line-height: 50px;
+    background-color:var(--fifth-color);
+    text-decoration: none;
+    font-family:Roboto-Medium;
+    font-size: 24px;
+    color: var(--eighth-color);
+    text-align: center;
+}
+main .home .tag a.active,
+main .home .tag a:hover{
+    background-color: var(--first-color);
+    color: var(--sixth-color);
+}
+main .home .tag .box-tag{
+    background-image: url("../img/hover.png");
+    background-position: center;
+    background-size: cover;
+    line-height: 130px;
+}
+main .home .tag .box-tag input,
+main .home .tag .box-tag select{
+    font-size: 12px;
+    font-family: Roboto-Light;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid var(--fourth-color);
+    margin-left: 13px;
+    margin-right: 13px;
+}
+main .home .tag .box-tag input{
+    max-width: 164px;
+    text-align: center;
+    line-height: 36px;
+}
+main .home .tag .box-tag input::placeholder{
+    color: var(--second-color);
+}
+main .home .tag .box-tag select{
+    display: inline-block;
+    width: 164px;
+    height: 36px;
+    color:var(--second-color) ;
+}
+main .home .tag .box-tag button{
+    color:var(--second-color);
+    height: 36px;
+    width: 110px;
+    background-color: var(--first-color);
+    border: none;
+    cursor: pointer;
+    margin-left: 13px;
+    margin-right: 13px;
+    font-size: 15px;
+    font-family: Roboto-Light;
+}
+
+
+/* aboutus */
+main .aboutus{
+    padding-top: 98px;
+    padding-bottom: 101px;
+    text-align: center;
+}
+main .aboutus h1{
+    font-family: Roboto-Black;
+    font-size: 60px;
+    color:var(--seventh-color);
+}
+main .aboutus h1 strong{
+    color:var(--first-color);
+}
+main .aboutus .border{
+    border: 5px solid var(--first-color) ;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 56px;
+}
+main .aboutus .tab{
+    display: flex;
+    justify-content: center;
+}
+main .aboutus .tab2,
+main .aboutus .tab1{
+    border: 1px solid #7d7d7d;
+    padding: 40px 10px;
+    margin-left: 13px;
+    margin-right: 13px;
+    max-width: 255px;
+    height: 280px;
+}
+main .aboutus .tab1 img{
+    margin-bottom: 42px;
+}
+main .aboutus .tab2 p,
+main .aboutus .tab1 p{
+    font-size: 18px;
+    font-family: OpenSans-Semibold;
+    margin-bottom: 24px;
+}
+main .aboutus .tab2 span,
+main .aboutus .tab1 span{
+    display: inline-block;
+    font-size: 14px;
+    font-family: OpenSans-Light;
+    width: 230px;
+    text-align: center;
+}
+main .aboutus .tab2:hover{
+    border: 1px solid var(--first-color);
+    cursor: pointer;
+}
+main .aboutus .tab1:hover{
+    border: 1px solid var(--first-color);
+    cursor: pointer;
+}
+main .aboutus .tab2 img{
+    margin-bottom: 25px;
+}
+
+/* toptours */
+main .toptours{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url("../img/caydubanner.jpg");
+    background-position: center;
+    background-size: cover;
+}
+main .toptours h1{
+    font-family: Roboto-Black;
+    font-size: 60px;
+    color: var(--fourth-color);
+    text-align: center;
+}
+main .toptours h1 strong{
+    color: var(--first-color);
+}
+main .toptours .border{
+    border: 5px solid var(--first-color);
+    max-width: 200px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+main .toptours .tour{
+    display: flex;
+    justify-content: center;
+}
+main .toptours .tour .tour1{
+    margin-left:28px;
+    margin-right:28px;
+}
+
+/* Phần hover trên hình */
+main .toptours .tour .tour1 .boc{
+    position: relative;
+}
+main .toptours .tour .tour1 .boc:hover .hehe{
+    opacity: 1;
+}
+main .toptours .tour .tour1 .boc .hehe{
+    position: absolute;
+    width: 100px;
+    top: 145px;
+    right: 0;
+    opacity: 0;
+    transition: ease 0.3s;
+}
+main .toptours .tour .tour1 .hehe .hover{
+    position: absolute;
+    top: 50%;
+    transform: translate(50%,50%);
+    left: 50%;
+    font-size: 20px;
+}
+main .toptours .tour .tour1 .hehe .hover a{
+    color: var(--fourth-color);
+    
+}
+/* Hết phần hover trên hình */
+
+main .toptours .tour .tour1 .box-info{
+    background-color: var(--fourth-color);
+    padding: 15px 15px;
+    max-width: 350px;
+    margin-top: -4px;
+}
+main .toptours .tour .tour1 .box-info h2{
+    font-family: OpenSans-Semibold;
+    margin-bottom: 7px;
+    font-size: 22px;
+    color: var(--nineth-color);
+}
+main .toptours .tour .tour1 .box-info .row{
+    display: flex;
+    margin-bottom: 13px;
+}
+main .toptours .tour .tour1 .box-info .row span{
+    font-size: 16px;
+    font-family: OpenSans-Light;
+    margin-left: auto;
+}
+main .toptours .tour .tour1 .box-info .row p{
+    font-family: OpenSans-Light;
+    color: var(--nineth-color);
+    font-size: 16px;
+}
+main .toptours .tour .tour1 .box-info .row p i{
+    margin-right: 6px;
+}
+main .toptours .tour .tour1 .box-info .box-button{
+    display: flex;
+}
+main .toptours .tour .tour1 .box-info .box-button button{
+    width: 100px;
+    line-height: 42px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid var(--first-color);
+    border-radius: 5px;
+    font-family: Roboto-Bold;
+    font-size: 15px;
+    color:var(--first-color);
+}
+main .toptours .tour .tour1 .box-info .box-button #detail{
+    margin-left: auto;
+}
+main .toptours .tour .tour1 .box-info .box-button button:hover{
+    color: var(--sixth-color);
+    background-color: var(--first-color);
+}
+
+/* gallery */
+main .gallery{
+    padding-top: 100px;
+    text-align: center;
+}
+main .gallery h1{
+    font-family: Roboto-Black;
+    color: var(--seventh-color);
+    font-size: 60px;
+}
+main .gallery .border{
+    border: 5px solid var(--first-color);
+    max-width: 200px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+main .gallery .button-box{
+    margin-bottom: 60px;
+}
+main .gallery .button-box button{
+    margin-left: 4px;
+    margin-right: 4px;
+    padding:8px 16px;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    color: var(--seventh-color);
+    border-radius: 5px;
+    border: 1px solid var(--seventh-color);
+    cursor: pointer;
+}
+main .gallery .button-box button.active,
+main .gallery .button-box button:hover{
+    background-color:var(--first-color);
+    border: 1px solid var(--first-color);
+    color: var(--fourth-color);
+}
+main .gallery .button-img{
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Hover trên hình */
+main .gallery .button-img{
+    display: flex;
+    justify-content: center;
+}
+main .gallery .button-img .box5{
+    position: relative;
+    width: 342px;
+    margin-bottom: 50px;
+}
+main .gallery .button-img .box5 .content{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    width: 200px;
+    background-color: rgba(52, 152, 219,0.8);
+    opacity: 0;
+    transition: ease 0.3s;
+}
+main .gallery .button-img .box5:hover .content{
+    opacity: 1;
+}
+main .gallery .button-img .box5 .content a{
+    color: var(--fourth-color);
+}
+
+/* favorite room */
+main .favoriterooms{
+    padding-top: 100px;
+    background-color: var(--tenth-color);
+}
+main .favoriterooms h1{
+    font-family: Roboto-Black;
+    font-size: 60px;
+    color: var(--seventh-color);
+    text-align: center;
+}
+main .favoriterooms .border{
+    border: 5px solid var(--first-color);
+    max-width: 200px;
+    margin:auto;
+    margin-bottom: 60px;
+}
+main .favoriterooms .room{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* hover */
+main .favoriterooms .room .room1 .hop{
+    position: relative;
+}
+main .favoriterooms .room .room1 .hop:hover .overlay{
+    transform: scale(1);
+}
+main .favoriterooms .room .room1 .hop .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(0);
+    transition: ease 0.3s;
+}
+main .favoriterooms .room .room1 .hop .overlay{
+    width: 100px;
+}
+main .favoriterooms .room .room1 .hop .overlay .content{
+    position: absolute;
+    top: 0;
+    left: 40%;
+    transform: translate(50%,50%);
+    font-size: 30px;
+}
+main .favoriterooms .room .room1 .hop .overlay .content a{
+    color: var(--fourth-color);
+}
+/* Hết hover */
+
+main .favoriterooms .room .room1 .box{
+    display: flex;
+    margin-top: -4px;
+    width: 533px;
+}
+main .favoriterooms .room .room1 .box .information1{
+    flex-basis: 85%;
+    background-color: var(--fourth-color);
+    padding-left: 16px;
+    padding-right: 16px;
+}
+main .favoriterooms .room .room1 .box .information1  h2{
+    font-size: 18px;
+    font-family: Roboto-Black;
+    color:var(--seventh-color);
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+main .favoriterooms .room .room1 .box .information1  p{
+    font-size: 18px;
+    font-family: OpenSans-Light;
+    font-size: 14px;
+    color:var(--seventh-color);
+    margin-bottom: 11px;
+}
+main .favoriterooms .room .room1 .box .information2{
+    flex-basis: 15%;
+    background-color: #e4e4e4;
+    font-family: Roboto-Bold;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* our agents */
+main .ouragents{
+    background-color: var(--tenth-color);
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+main .ouragents .person{
+    display: flex;
+    justify-content: center;
+}
+main .ouragents .person .box{
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+main .ouragents .person .box .content{
+    position: absolute;
+    bottom:10px;
+    transform: translate(0,13%);
+    background-color: rgba(51, 151, 210,0.8);
+    width: 100%;
+}
+main .ouragents .person .box .content h2{
+    font-size: 18px;
+    font-family: OpenSans-Semibold;
+    color: var(--fourth-color);
+    margin-bottom: 5px;
+}
+main .ouragents .person .box .content p{
+    font-size: 14px;
+    font-family: OpenSans-Light;
+    color: var(--fourth-color);
+}
+main .ouragents .person .box .hover5{
+    position: relative;
+}
+main .ouragents .person .box .hover5:hover .overlay{
+    opacity: 1;
+}
+main .ouragents .person .box .hover5 .overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,20%);
+    width: 90%;
+    background-color: rgba(51, 151, 210,0.8);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    opacity: 0;
+    transition: ease 0.3s;
+}
+
+main .ouragents .person .box .hover5 .overlay a{
+    color: var(--fourth-color);
+    display: inline-block;
+    border: 1px solid var(--fourth-color);
+    width: 45px;
+    line-height: 45px;
+    border-radius: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+main .ouragents h1{
+    font-family: Roboto-Black;
+    font-size: 60px;
+    color: var(--seventh-color);
+}
+main .ouragents .border{
+    border: 5px solid var(--first-color);
+    max-width: 200px;
+    margin:auto;
+    margin-bottom: 60px;
+}
+/* our partner */
+main .ourpartner{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: #e9f0fd;
+    text-align: center;
+}
+main .ourpartner h1{
+    color:var(--seventh-color);
+    font-family: Roboto-Black;
+    font-size: 60px;
+}
+main .ourpartner .border{
+    border: 5px solid var(--first-color);
+    max-width: 200px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+main .ourpartner .partner{
+    display: flex;
+    justify-content: center;
+}
+main .ourpartner .partner img{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+main .ourpartner .partner .box{
+    position: relative;
+    width: 285px;
+}
+main .ourpartner .partner .box:hover .search{
+    opacity: 1;
+}
+main .ourpartner .partner .box .search{
+    position: absolute;
+    width: 100px;
+    top: 0;
+    right: 15px;
+    opacity: 0;
+    transition: ease 0.3s;
+}
+main .ourpartner .partner .box .search .content{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    font-size: 30px;
+}
+main .ourpartner .partner .box .search .content a{
+    color: var(--fourth-color);
+}
+/* our blog */
+main .ourblog{
+    padding-top: 92px;
+    padding-bottom: 107px;
+}
+main .ourblog h1{
+    font-family: Roboto-Black;
+    font-size: 60px;
+    text-align: center;
+    color: var(--seventh-color);
+}
+main .ourblog .border{
+    border: 5px solid var(--first-color);
+    max-width: 200px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+main .ourblog .box-blog .border1{
+    border: 2px solid var(--first-color);
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+main .ourblog .blog{
+    display: flex;
+    justify-content: center;
+}
+main .ourblog .blog .blog1{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+main .ourblog .blog .blog1 .box-blog{
+    width: 350px;
+}
+main .ourblog .blog .blog1 .box-blog h2{
+    font-family: OpenSans-Semibold;
+    font-size: 18px;
+    margin-bottom: 7px;
+    color: var(--seventh-color);
+}
+main .ourblog .blog .blog1 .box-blog .border{
+    border: 2px solid var(--first-color);
+    max-width: 200px;
+    margin-bottom: 15px;
+}
+main .ourblog .blog .blog1 .box-blog p{
+    line-height: 22px;
+    font-size: 14px;
+    font-family: OpenSans-Regular;
+}
+
+/* getintouch */
+main .getintouch{
+    padding-top: 90px;
+    padding-bottom: 73px;
+    background-image: url(../img/caydubanner.jpg);
+    background-position: center;
+    background-size: cover;
+}
+main .getintouch h1{
+    font-family: Roboto-Black;
+    font-size: 60px;
+    color: var(--fourth-color);
+    text-align: center;
+}
+main .getintouch .border{
+    border: 5px solid var(--first-color);
+    max-width: 200px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+main .getintouch form{
+    text-align: center;
+}
+main .getintouch form .input-tag2,
+main .getintouch form .input-tag1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+}
+main .getintouch form .input-tag2 input,
+main .getintouch form .input-tag1 input{
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 447px;
+    line-height: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    padding-left: 20px;
+    border: 2px solid var(--eleventh-color);
+}
+main .getintouch .textarea{
+    display: flex;
+    justify-content: center;
+}
+main .getintouch form textarea::placeholder,
+main .getintouch form .input-tag2 input::placeholder,
+main .getintouch form .input-tag1 input::placeholder{
+    color: var(--second-color);
+    font-size: 14px;
+    font-family: OpenSans-Regular;
+}
+main .getintouch form textarea{
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 30px;
+    border: 2px solid var(--eleventh-color);
+    width: 927px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+main .getintouch form textarea::placeholder{
+    padding-left: 20px;
+    padding-top: 15px;
+}
+main .getintouch form button{
+    width: 160px;
+    line-height: 40px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: OpenSans-Regular;
+    background-color: var(--first-color);
+    border: none;
+    color: var(--fifth-color);
+}
+
+/* address */
+main .address{
+    padding-top: 63px;
+    padding-bottom: 58px;
+    background-color: #2d3237;
+    display: flex;
+    justify-content: center;
+}
+
+/* general */
+main .address .general{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+main .address .general h1{
+    font-family: Roboto-Bold;
+    font-size: 24px;
+    color: var(--second-color);
+}
+main .address .general .border{
+    border: 2px solid var(--first-color);
+    width: 100px;
+    margin-bottom: 30px;
+}
+main .address .general p{
+    font-size: 14px;
+    color:var(--second-color);
+    font-family: OpenSans-Regular;
+}
+/* aboutus1 */
+main .address .aboutus1{
+    max-width: 347px;
+}
+main .address .aboutus1 p{
+    margin-bottom: 17px;
+    line-height: 30px;
+}
+main .address .aboutus1 input{
+    width: 245px;
+    line-height: 46px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid var(--second-color);
+}
+main .address .aboutus1 input::placeholder{
+    font-size: 16px;
+    font-family: OpenSans-Regular;
+    color: var(--second-color);
+    padding-left: 17px;
+}
+main .address .aboutus1 button{
+    width: 106px;
+    line-height: 51px;
+    background-color: var(--first-color);
+    margin-left: -10px;
+    border: none;
+    font-family: OpenSans-Regular;
+    color: var(--second-color);
+}
+
+/* openinghours */
+main .address .openinghours .box-daytime{
+    display: flex;
+    width: 347px;
+}
+main .address .openinghours .box-daytime p{
+    line-height: 30px;
+}
+main .address .openinghours .box-daytime .time{
+    margin-left:auto;
+}
+main .address .openinghours .box-daytime .time p:not(#closed){
+    color: var(--third-color);
+}
+main .address .openinghours .box-daytime .time #closed{
+    text-align: right;
+    color: #ff0000;
+}
+/* ouraddress */
+main .address .ouraddress{
+    width: 347px;
+}
+main .address .ouraddress strong{
+    font-family: Roboto-Bold;
+    color:#7fff00;
+}
+main .address .ouraddress a{
+    border: 1px solid var(--fourth-color);
+    margin-right: 5px;
+    display: inline-block;
+    width: 44px;
+    line-height: 44px;
+    text-align: center;
+    font-size: 25px;
+    color: var(--fourth-color);
+    text-decoration: none;
+    border-radius: 5px;
+}
+main .address .ouraddress a:hover{
+    background-color:var(--first-color);
+    border: none;
+}
+main .address .ouraddress .p-tag{
+    margin-bottom: 18px;
+}
+main .address .ouraddress .p-tag p{
+    line-height: 30px;
+}
+
+/* FOOTER */
+footer{
+    text-align: center;
+    background-color: var(--eighth-color);
+    color: var(--second-color);
+    font-family: OpenSans-Regular;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    font-size: 16px;
+}
+footer .back-to-top{
+	position: fixed;
+	bottom: 20px;
+	right: 40px;
+	background-color: var(--first-color);
+	color: var(--second-color);
+	line-height: 44px;
+	width: 44px;
+	text-align: center;
+}
+
+footer span{
+    color:var(--first-color);
+}
+
+/* menu bar */
+@media(max-width:992px){
+    header .header2{
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+    header .header2 .container1{
+        position: absolute;
+        top: 100%;
+        width: 100%;
+    }
+    header .header2 .container ul{
+        display: none;
+    }
+    header .header2 .container button{
+        display: block;
+        margin-left: auto;
+    }
+}
+@media(min-width:993px){
+    header .header2 .container1 ul{
+        display: none;
+    }
+}
+
+
+/* responsive */
+@media(max-width:576px){
+    body{
+        max-width: 576px;
+    }
+    header .header1{
+        display: block;
+        text-align: center;
+        height: 100%;
+        padding: 5px;
+    }
+    header .header1 .contact,
+    header .header1 .tool{
+        font-size: 13px;
+    }
+    header .header2 .container img{
+        margin-bottom: 10px;
+    }
+    header .header2 .container button{
+        margin-top: -12px;
+        margin-right: 10px;
+    }
+    header .sticky{
+        max-width: 100%;
+    }
+    main .home h1{
+        font-size: 40px;
+    }
+    main .home .tag{
+        display: none;
+    }
+    main #aboutus{
+        padding-top: 0;
+        padding-bottom: 51px;
+    }
+    main .aboutus .tab{
+        flex-wrap: wrap;
+    }
+    main .aboutus .tab .tab1{
+        margin-bottom: 50px;
+    }
+    main #toptours {
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
+    main .toptours .tour{
+        flex-wrap: wrap;
+    }
+    main .toptours .tour .tour1{
+        margin-bottom: 50px;
+    }
+    main #gallery{
+        padding-top: 0;
+    }
+    main .gallery .button-box{
+        display: flex;
+        justify-content: center;
+    }
+    main .gallery .button-img{
+        margin-bottom: 50px;
+    }
+    main .gallery video{
+        display: none;
+    }
+    main #favoriterooms{
+        padding-top: 0;
+    }
+    main .favoriterooms .room .room1{
+        margin-bottom: 50px;
+    }
+    main #ouragents{
+        padding-top: 0;
+        padding-bottom: 70px;
+    }
+    main .ouragents .person{
+        flex-wrap: wrap;
+    }
+    main .ouragents .person .box{
+        margin-bottom: 30px;
+    }
+    main #ourpartner{
+        padding-top: 0;
+        padding-bottom: 60px;
+    }
+    main .ourpartner .partner{
+        flex-wrap: wrap;
+    }
+    main .ourpartner .partner .box{
+        margin-bottom: 30px;
+    }
+    main #ourblog{
+        padding-top: 0;
+        padding-bottom: 57px;
+    }
+    main .ourblog .blog{
+        flex-wrap: wrap;
+    }
+    main .ourblog .blog .blog1{
+        margin-bottom: 50px;
+    }
+    main #getintouch{
+        padding-top: 0;
+    }
+    main .address{
+        flex-wrap: wrap;
+        padding-bottom: 28px;
+    }
+    main .address .general{
+        margin-bottom: 30px;
+    }
+
+}
+@media(min-width:576px){
+    body{
+        min-width: 576px;
+    }
+    header .header1{
+        display: block;
+        text-align: center;
+        height: 100%;
+        padding: 5px;
+    }
+    header .header1 .contact,
+    header .header1 .tool{
+        font-size: 13px;
+    }
+    header .header2 .container img{
+        margin-bottom: 10px;
+    }
+    header .header2 .container button{
+        margin-top: -12px;
+        margin-right: 10px;
+    }
+    header .sticky{
+        max-width: 100%;
+    }
+    main .home h1{
+        font-size: 40px;
+    }
+    main .home .tag{
+        display: none;
+    }
+    main #aboutus{
+        padding-top: 0;
+        padding-bottom: 69px;
+    }
+    main .aboutus .tab{
+        flex-wrap: wrap;
+    }
+    main .aboutus .tab .tab1{
+        margin-bottom: 32px;
+    }
+    main #toptours{
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
+    main .toptours .tour{
+        flex-wrap: wrap;
+    }
+    main .toptours .tour .tour1{
+        margin-bottom: 50px;
+    }
+    main #gallery{
+        padding-top: 0;
+    }
+    main .gallery .button-img{
+        margin-bottom: 50px;
+    }
+    main .gallery video{
+        display: none;
+    }
+    main #favoriterooms{
+        padding-top: 0;
+    }
+    main .favoriterooms .room .room1{
+        margin-bottom: 50px;
+    }
+    main #ouragents{
+        padding-top: 0;
+        padding-bottom: 70px;
+    }
+    main .ouragents .person{
+        flex-wrap: wrap;
+    }
+    main .ouragents .person .box{
+        margin-bottom: 30px;
+    }
+    main #ourpartner{
+        padding-top: 0;
+        padding-bottom: 40px;
+    }
+    main .ourpartner .partner{
+        flex-wrap: wrap;
+    }
+    main .ourpartner .partner .box{
+        margin-bottom: 30px;
+    }
+    main #ourblog{
+        padding-top: 0;
+        padding-bottom: 57px;
+    }
+    main .ourblog .blog{
+        flex-wrap: wrap;
+    }
+    main .ourblog .blog .blog1{
+        margin-bottom: 50px;
+    }
+    main #getintouch{
+        padding-top: 0;
+    }
+    main .address{
+        flex-wrap: wrap;
+        padding-bottom: 0;
+    }
+    main .address .general{
+        margin-bottom: 50px;
+    }
+}
+@media(min-width:754px){
+    main .home h1{
+        font-size: 55px;
+    }
+    main .home p{
+        font-size: 30px;
+    }
+    main .address{
+        flex-direction: column;
+    }
+    main .address .general{
+        margin: auto;
+        margin-bottom: 50px;
+    }
+}
+@media(min-width:992px){
+    header .header1{
+        display: flex;
+        padding: 20px;
+    }
+    header .header1 .tool a,
+    header .header1 .contact a{
+        font-size: 14px;
+    }
+    main .home h1{
+        font-size: 70px;
+    }
+    main .home p{
+        font-size: 40px;
+    }
+    main .home .tag{
+        display: block;
+        max-width: 80%;
+    }
+    main .address{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    main .address .general{
+        margin-left: 20px;
+    }
+    main .address .openinghours{
+        margin-top: 0;
+    }
+    main .address .ouraddress a{
+        margin-bottom: 10px;
+    }
+}
+@media(min-width:1200px){
+    main .home h1{
+        font-size: 80px;
+    }
+    main .favoriterooms .room .room1{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    main .address .general{
+        margin-right: 20px;
+    }
+    main .home .tag{
+        max-width: 60%;
+    }
+}
+
+
